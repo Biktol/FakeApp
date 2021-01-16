@@ -1,9 +1,13 @@
-const searchBookButton = document.querySelector(".submitForm");
+
+/** Good, very descriptive. */
+const searchBookButton = document.querySelector(".submit-form");
 const bookInput = document.querySelector(".form_input");
 const bookTitle = document.querySelector(".book_title");
 const bookCover = document.querySelector(".book_cover");
 const bookDescription = document.querySelector(".book_description");
 const bookAuthor = document.querySelector(".book_author");
+
+/** Short and descriptive function names, neat. */
 
 //Esto es porque la mardita api de búsqueda proporciona todo menos la descripción, gg.
 const getBookDescription = (bookUrl) => {
@@ -29,7 +33,12 @@ const getBookData = (event) => {
   event.preventDefault();
   searchBookButton.disabled = true;
 
-  const bookQuery = bookInput.value.replace(/ /g, "+").toLowerCase().trim();
+  // Avoid long-lines.
+  const bookQuery = bookInput
+    .value
+    .replace(/ /g, "+")
+    .toLowerCase()
+    .trim();
 
   axios({
     method: "GET",
@@ -42,6 +51,7 @@ const getBookData = (event) => {
         !response.data.docs[flag].cover_i ||
         response.data.docs[flag].cover_i <= 0
       ) {
+        // flag?
         flag++;
       }
       bookTitle.textContent = response.data.docs[flag].title;
