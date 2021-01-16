@@ -1,0 +1,172 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/Roboto/Roboto-Light-webfont.woff") format("woff");
+  font-style: normal;
+  font-weight: 300;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  line-height: 1.8em;
+  color: #5d6063;
+}
+
+h1,
+h2 {
+  line-height: 1.3em;
+  font-weight: normal;
+  text-align: center;
+}
+
+header {
+  text-align: center;
+  color: #fff;
+}
+
+.header {
+  padding-top: 4.5em;
+  padding-bottom: 4.5em;
+  background-color: #1f4c79;
+}
+
+.title > span {
+  font-family: "Lobster", "cursive";
+}
+
+.title{
+  font-size: 40px;
+}
+
+.container {
+  background-color: #f6f7f879;
+  width: 100%;
+  margin-bottom: 90px;
+}
+
+.content_container {
+  display: flex;
+  justify-content: space-around;
+  font-size: 18px;
+  width: 100%;
+  margin: 70px 0px;
+}
+
+.form_container {
+  width: 30%;
+  margin: 20px 40px;
+  text-align: center;
+  display: block;
+}
+
+.form_label {
+  font-size: 24px;
+}
+
+.form_input {
+  padding: 7px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 100%;
+  height: 30px;
+}
+
+.submitForm {
+  font: inherit;
+  background: #1f4c79;
+  border: 1px solid #1f4c79;
+  color: white;
+  cursor: pointer;
+  padding: 15px 15px;
+  font-size: inherit;
+}
+
+.submitForm:focus {
+  outline: none;
+}
+
+.submitForm:hover,
+.submitForm:active {
+  background: #3872ac;
+  border-color: #3872ac;
+}
+
+.submitForm:disabled {
+  background: gray;
+  border-color: gray;
+  cursor: wait;
+}
+
+.book_container {
+  display: block;
+  margin: 20px 40px;
+}
+
+.book_data {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+}
+
+.book_title {
+  font-size: 28px;
+  color: #5d6063;
+  text-decoration: none;
+  cursor: text;
+}
+
+.book_title:hover,
+.book_title:visited{
+  color: #5d6063;
+}
+
+.link:hover,
+.link:visited{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.book_cover {
+  margin-top: 30px;
+  margin-right: 30px;
+  width: 150px;
+  height: 200px;
+}
+
+.book_author{
+  margin-top: 30px;
+}
+
+.book_description {
+  font-family: "Roboto", sans-serif;
+  border: 1px solid #d6d9dc;
+  border-radius: 3px;
+  padding: 7px;
+  position: absolute;
+  resize: none;
+  top: 80px;
+  left: 180px;
+  height: 150px;
+}
+
+.hidden {
+  display: none;
+}
+
+footer{
+  text-align: center;
+  padding-top: 50px;
+  color: #fff;
+  background-color: #1f4c79;
+  height: 115px;
+}
+
+footer > a{
+  color: #fff;
+}

@@ -1,0 +1,66 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FakeApp</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="/js/books.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <h1 class="title">{<span>Fake app</span>, real books}</h1>
+      </div>
+    </header>
+    <div class="container">
+      <div class="content_container">
+        <div class="form_container">
+          <h2>Want a book?</h2>
+          <input
+            class="form_input"
+            type="text"
+            name="searchBook"
+            id="searchBook"
+            placeholder=" Write the book's title here"
+            value=""
+          />
+          <button class="submitForm">Search Book</button>
+        </div>
+        <div class="book_container">
+          <a
+            href="javascript:void(0)"
+            target=""
+            rel="noopener noreferrer"
+            oncontextmenu="return false"
+            class="book_title"
+            >Your book will appear here.</a>
+          <div class="book_data">
+            <img class="book_cover hidden" src="" alt="" />
+            <p class="book_author"></p>
+            <textarea
+              name="bookDescription"
+              id="bookDescription"
+              cols="30"
+              rows="5"
+              class="book_description hidden"
+            ></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      © 2021 FakeApp by Victor Homez, API provided by
+      <a
+        href="https://openlibrary.org"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="link"
+        >Open Library</a>
+    </footer>
+  </body>
+</html>
